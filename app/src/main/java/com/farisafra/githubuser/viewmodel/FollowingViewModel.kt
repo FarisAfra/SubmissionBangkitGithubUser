@@ -15,7 +15,7 @@ class FollowingViewModel : ViewModel() {
 
     fun setListFollowing(username: String) {
         ApiClient.apiInstance
-            .getfollowers(username)
+            .getFollowing(username)
             .enqueue(object : Callback<ArrayList<User>> {
                 override fun onResponse(
                     call: Call<ArrayList<User>>,
